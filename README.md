@@ -25,7 +25,7 @@ In your packer template, configure the post processor:
           },
           {
             "type": "docker-dockerfile",
-            "volume": ["/data"]
+            "volume": ["/data"],
             "expose": [8080],
             "entrypoint": ["/entrypoint.sh"],
             "cmd": ["bash"],
